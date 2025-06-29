@@ -12,7 +12,7 @@ const FreeBook = () => {
   useEffect(() => {
     const getBook = async () => {
       try {
-        const response = await axios.get("http://127.0.0.1:4000/book");
+        const response = await axios.get("https://book-store-1-wryr.onrender.com/book");
         const contents = response.data.filter(
           (data) => data.category === "Free"
         );
